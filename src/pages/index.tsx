@@ -1,12 +1,10 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 type Props = {
-  title: string;
-};
+  title: string
+}
 
-export default function Home({ title = "Curso avançado ts" }: Props) {
-  const foo = "a";
-
+export default function Home({ title = 'Curso avançado ts' }: Props) {
   return (
     <div className="container">
       <Head>
@@ -58,7 +56,7 @@ export default function Home({ title = "Curso avançado ts" }: Props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
@@ -209,5 +207,5 @@ export default function Home({ title = "Curso avançado ts" }: Props) {
         }
       `}</style>
     </div>
-  );
+  )
 }
