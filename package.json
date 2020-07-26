@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint src --max-warnings=0"
+    "lint": "npx eslint src --max-warnings=0",
+    "test":"jest"
   },
   "dependencies": {
     "next": "9.4.4",
@@ -15,8 +16,8 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.7",
     "@types/node": "^14.0.20",
     "@types/react": "^16.9.41",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
@@ -26,6 +27,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.6",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
     "typescript": "^3.9.6"
   },
   "husky": {
