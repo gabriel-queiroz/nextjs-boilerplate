@@ -5,6 +5,8 @@ type Props = {
 }
 
 export default function Home({ title = 'Curso avançado ts' }: Props) {
+  const foo = 'Gabriel Queiroz do nasicmento'
+
   return (
     <div className="container">
       <Head>

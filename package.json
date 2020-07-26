@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint src"
+    "lint": "npx eslint src --max-warnings=0"
   },
   "dependencies": {
     "next": "9.4.4",
@@ -15,6 +15,8 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "@types/node": "^14.0.20",
     "@types/react": "^16.9.41",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
@@ -25,5 +27,15 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.6",
     "typescript": "^3.9.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix"
+    ]
   }
 }
