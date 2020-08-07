@@ -1,9 +1,5 @@
-import { Container } from './styles'
+import Main from 'components/Main'
 
 export default function Home() {
-  return (
-    <Container>
-      <h1>bem vindo </h1>
-    </Container>
-  )
+  return <Main></Main>
 }
