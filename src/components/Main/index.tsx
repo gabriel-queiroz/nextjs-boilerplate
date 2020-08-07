@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-const a = ''
+const a = 'b'
 
 const Main = () => (
   <S.Container>
