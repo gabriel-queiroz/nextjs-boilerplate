@@ -1,7 +1,5 @@
 import * as S from './styles'
 
-const a = 'a'
-
 const Main = () => (
   <S.Container>
     <S.Logo
