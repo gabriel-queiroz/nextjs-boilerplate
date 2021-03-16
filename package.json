@@ -14,7 +14,7 @@
     "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
-    "next": "9.5.5",
+    "next": "10.0.9",
     "next-pwa": "^3.1.5",
     "prettier": "^2.0.5",
 
